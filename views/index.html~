@@ -13,7 +13,7 @@
     <p>Welcome to <%= title %></p>
     
     <p><a href="/login">Login </a>
-	<a href="/register">Sign Up</a>
+	<a href="/register">   Sign Up</a>
     </p>
   </body>
 </html>
