@@ -1,0 +1,18 @@
+extends layout
+
+include _includes/sharedHTMLfunctions
+
+block content
+  #banner.page-header
+    .row
+      .col-lg-12
+        h1= pageHeader.title
+        h3= pageHeader.strapline
+  .jumbotron
+    form(action='#', method='get')
+      fieldset
+        input(type='email', placeholder='Username@gmail.com', required='')
+        input(type='password', placeholder='Password', required='')
+        small
+          a(href='#') Forgot Password?
+        input(type='submit', value='login')
