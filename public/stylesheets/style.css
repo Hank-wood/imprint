@@ -1,37 +1,9 @@
-fieldset{
-	width: 280px;
-	margin: auto;
-}
-input {
-	display: block;
-	margin-top: 15px;
-}
-form fieldset input[type="email"], input[type="password"] {
-    border: none;
-    border-radius: 3px;
-    color: #5a5656;
-    font-family: inherit;
-    font-size: 14px;
-    height: 50px;
-    outline: none;
-    padding: 0px 10px;
-    width: 280px;
-    -webkit-appearance: none;
-}
-form fieldset input[type="submit"] {
-    background-color: #8e1821;
-    border: none;
-    border-radius: 3px;
-    color: #f4f4f4;
-    cursor: pointer;
-    font-family: inherit;
-    height: 50px;
-    text-transform: uppercase;
-    width: 280px;
-    -webkit-appearance: none;
-}
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
+.review {padding-bottom: 5px;}
+.panel-body.review-container {padding-top: 0;}
+.review-header {margin-bottom: 10px;}
+.reviewAuthor {margin: 0 5px;}
+.reviewTimestamp {color: #ccc;}
+
+.label-facility {margin-right: 2px}
+.rating-stars {margin-left: 3px;}
+#filter {margin-left: 4px;}

@@ -1,7 +1,5 @@
 #!/usr/bin/env node
-// process.env['DEBUG'] = 'MEAN_login';
-//set DEBUG=MEAN_login
-var debug = require('debug')('MEAN_login');
+var debug = require('debug')('Express4');
 var app = require('../app');
 
 app.set('port', process.env.PORT || 3000);
