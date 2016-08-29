@@ -4,10 +4,10 @@ Cerberus is a full-stack single page app with the MEAN architecture and REST API
 
 ## Cerberus Workflow Flow
 
-## package.json
+## Package.json
 
 ### Version
-[x] 0.0.1
+- [x] 0.0.1
 
 ### Dependencies
 - [x] Express
