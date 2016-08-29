@@ -2,17 +2,17 @@
 
 Cerberus is a full-stack single page app with the MEAN architecture and REST API using Angular, Node, Express and MongoDB
 
-# Cerberus Workflow Flow
+## Cerberus Workflow Flow
 
-# package.json
+## package.json
 
-## Version
-0.0.1
+### Version
+[x] 0.0.1
 
-## Dependencies
+### Dependencies
 - [x] Express
 - [x] MongoDB
 - [x] AngularJS
 
-# License
+## License
 
