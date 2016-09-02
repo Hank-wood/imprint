@@ -1,8 +1,8 @@
-# User Authentication with MEAN - Cerberus
+# Imprint - User Authentication with MEAN
 
-Cerberus is a full-stack single page app with the MEAN architecture and REST API using Angular, Node, Express and MongoDB
+Imprint is a full-stack single page app with the MEAN architecture and REST API using Angular, Node, Express and MongoDB
 
-## Cerberus Workflow Flow
+## Imprint Workflow Flow
 
 ## Package.json
 
@@ -15,4 +15,4 @@ Cerberus is a full-stack single page app with the MEAN architecture and REST API
 - [x] AngularJS
 
 ## License
-
+The MIT License (MIT)

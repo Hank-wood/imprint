@@ -1,6 +1,6 @@
 (function () {
 
-  angular.module('loc8rApp', ['ngRoute', 'ngSanitize', 'ui.bootstrap']);
+  angular.module('ImprintApp', ['ngRoute', 'ngSanitize', 'ui.bootstrap']);
 
   function config ($routeProvider, $locationProvider) {
     $routeProvider
@@ -9,16 +9,6 @@
         controller: 'homeCtrl',
         controllerAs: 'vm'
       })
-      // .when('/about', {
-      //   templateUrl: '/common/views/genericText.view.html',
-      //   controller: 'aboutCtrl',
-      //   controllerAs: 'vm'
-      // })
-      // .when('/location/:locationid', {
-      //   templateUrl: '/locationDetail/locationDetail.view.html',
-      //   controller: 'locationDetailCtrl',
-      //   controllerAs: 'vm'
-      // })
       .when('/register', {
         templateUrl: '/auth/register/register.view.html',
         controller: 'registerCtrl',
@@ -36,7 +26,7 @@
   }
 
   angular
-    .module('loc8rApp')
+    .module('ImprintApp')
     .config(['$routeProvider', '$locationProvider', config]);
 
 })();

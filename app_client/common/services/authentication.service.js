@@ -1,18 +1,18 @@
 (function () {
 
   angular
-    .module('loc8rApp')
+    .module('ImprintApp')
     .service('authentication', authentication);
 
   authentication.$inject = ['$http', '$window'];
   function authentication ($http, $window) {
 
     var saveToken = function (token) {
-      $window.localStorage['loc8r-token'] = token;
+      $window.localStorage['imprint-token'] = token;
     };
 
     var getToken = function () {
-      return $window.localStorage['loc8r-token'];
+      return $window.localStorage['imprint-token'];
     };
 
     var isLoggedIn = function() {
@@ -51,7 +51,7 @@
     };
 
     logout = function() {
-      $window.localStorage.removeItem('loc8r-token');
+      $window.localStorage.removeItem('imprint-token');
     };
 
     return {

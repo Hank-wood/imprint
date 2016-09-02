@@ -1,7 +1,7 @@
 (function () {
 
   angular
-    .module('loc8rApp')
+    .module('ImprintApp')
     .controller('registerCtrl', registerCtrl);
 
   registerCtrl.$inject = ['$location','authentication'];
@@ -9,7 +9,7 @@
     var vm = this;
 
     vm.pageHeader = {
-      title: 'Create a new Loc8r account'
+      title: 'Create a new Imprint account'
     };
 
     vm.credentials = {
