@@ -47,7 +47,8 @@ imprint
     └── stylesheets
 ```
 ## Version
-- 0.0.1
+- **v0.0.1: stable version**
+- v0.0.1: init verison
 
 ## Dependencies
 - node: v0.12.7
@@ -65,6 +66,19 @@ imprint
 - passport-local: v1.0.0
 - serve-favicon: v2.3.0
 - uglify-js: v2.7.3
+
+## Install & Run
+
+```bash
+git clone https://github.com/lushen/imprint.git
+
+cd imprint
+
+npm install
+
+npm start
+```
+>Before running Imprint, you should make sure you have installed Node.js, npm, git and MongoDB already.
 
 ##Platform
 - Heroku
