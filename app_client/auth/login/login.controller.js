@@ -8,6 +8,10 @@
   function loginCtrl($location, authentication) {
     var vm = this;
 
+    if(authentication.isLoggedIn()){
+      $location.path('/');
+    }
+
     vm.pageHeader = {
       title: 'Sign in to Imprint'
     };

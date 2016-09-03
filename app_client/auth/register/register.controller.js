@@ -8,6 +8,10 @@
   function registerCtrl($location, authentication) {
     var vm = this;
 
+    if(authentication.isLoggedIn()){
+      $location.path('/');
+    }
+
     vm.pageHeader = {
       title: 'Create a new Imprint account'
     };
