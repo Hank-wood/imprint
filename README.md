@@ -2,9 +2,9 @@
 
 Imprint is a full-stack single page app with the MEAN architecture, Auth2.0, SPA and RESTful API using Angular, Node, Express and MongoDB.
 
-### Imprint Workflow Flow
+## Imprint Workflow Flow
 
-### Project Structure
+## Project Structure
 ```
 imprint
 ├── app_api # RESTful API
@@ -102,11 +102,11 @@ npm start
 The MIT License (MIT)
 
 ## What Next?
--[] Add users profile page when they sign in or sign up 
--[] Add third-party authentication
--[] Set users api authentication and extend current api
--[] Switch Angular@1.x.x to Angular@2.x.x (or React, maybe...)
--[] Push real-time data to the client side
--[] Switch mongodb to rethinkdb (depend on needs...)
--[] Add CSS and JS animation effect to the front end pages
--[] Add loading page
+- [ ] Add users profile page when they sign in or sign up 
+- [ ] Add third-party authentication
+- [ ] Set users api authentication and extend current api
+- [ ] Switch Angular@1.x.x to Angular@2.x.x (or React, maybe...)
+- [ ] Push real-time data to the client side
+- [ ] Switch mongodb to rethinkdb (depend on needs...)
+- [ ] Add CSS and JS animation effect to the front end pages
+- [ ] Add loading page
