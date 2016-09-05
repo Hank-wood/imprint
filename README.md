@@ -1,11 +1,11 @@
 # Imprint - User Authentication with MEAN
 
-Imprint is a full-stack single page app with the MEAN architecture, Auth2.0, SPA and RESTful API using Angular, Node, Express and MongoDB.
+Imprint is a full-stack single page app with the MEAN(MongoDB, Express, Angular and Node) architecture, Auth2.0, SPA and RESTful API.
 
 ## Imprint Workflow Flow
 
 ## Project Structure
-```
+```bash
 imprint
 ├── app_api # RESTful API
 │   ├── config
@@ -69,8 +69,8 @@ imprint
 - v0.0.1: init verison
 
 ## Dependencies
-- node: v0.12.7
-- npm: v2.15.9
+- node: v6.4.0
+- npm: v3.10.3
 - body-parser: v1.15.2
 - cookie-parser: v1.4.3
 - debug: v2.2.0
@@ -103,10 +103,13 @@ The MIT License (MIT)
 
 ## What Next?
 - [ ] Add users profile page when they sign in or sign up 
-- [ ] Add third-party authentication
+- [ ] Add third-party authentication, such as Facebook and Tiwtter
 - [ ] Set users api authentication and extend current api
 - [ ] Switch Angular@1.x.x to Angular@2.x.x (or React, maybe...)
 - [ ] Push real-time data to the client side
 - [ ] Switch mongodb to rethinkdb (depend on needs...)
-- [ ] Add CSS and JS animation effect to the front end pages
+- [ ] Add CSS and JS text animation effect to the front end pages
 - [ ] Add loading page
+- [ ] Add verification email function when registered successfully
+- [ ] Allow users to change the password
+- [ ] Add more credentials notifications into register and login page
