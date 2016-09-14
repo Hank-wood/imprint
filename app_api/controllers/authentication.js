@@ -21,6 +21,7 @@ module.exports.register = function(req, res) {
   user.email = req.body.email;
 
   user.setPassword(req.body.password);
+  user.newSessionDate();
 
   user.save(function(err) {
     var token;
@@ -53,9 +54,16 @@ module.exports.login = function(req, res) {
     }
 
     if(user){
-      token = user.generateJwt();
-      sendJSONresponse(res, 200, {
-        "token" : token
+      user.newSessionDate();
+      user.save(function(err) {
+        if(err){
+          sendJSONresponse(res, 404, err);
+        } else {
+          token = user.generateJwt();
+          sendJSONresponse(res, 200, {
+            "token" : token
+          })
+        }
       });
     } else {
       sendJSONresponse(res, 401, info);
@@ -63,3 +71,25 @@ module.exports.login = function(req, res) {
   })(req, res);
 
 };
+
+// module.exports.facebook = function(req, res) {
+
+//   passport.authenticate('facebook', function(err, user, info){
+//     var token;
+
+//     if (err) {
+//       sendJSONresponse(res, 404, err);
+//       return;
+//     }
+
+//     if(user){
+//       token = user.generateJwt();
+//       sendJSONresponse(res, 200, {
+//         "token" : token
+//       });
+//     } else {
+//       sendJSONresponse(res, 401, info);
+//     }
+//   })(req, res);
+
+// };

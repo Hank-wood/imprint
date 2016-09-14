@@ -20,6 +20,7 @@
     "mongoose": "latest",
     "morgan": "latest",
     "passport": "latest",
+    "passport-facebook": "latest",
     "passport-local": "latest",
     "serve-favicon": "latest",
     "uglify-js": "latest"

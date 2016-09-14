@@ -1,6 +1,6 @@
 # Imprint - User Authentication with MEAN
 
-[![license](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg)]()
+[![license](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg)](https://opensource.org/licenses/MIT)
 [![GitHub release](https://img.shields.io/badge/release-v0.0.1-blue.svg)]()
 
 Imprint is a full-stack single page app with the MEAN(MongoDB, Express, Angular and Node) architecture, OAuth 2.0, SPA and RESTful API. Thanks for Simon Holmes, who is the author of [*Getting MEAN with Mongo, Express, Angular, and Node*](https://www.manning.com/books/getting-mean-with-mongo-express-angular-and-node), gave me the basic framework to working on.
@@ -100,6 +100,6 @@ The MIT License (MIT)
 - [ ] Allow users to change the password
 - [ ] Add more credentials notifications into register and login page
 - [ ] Add gulp file to compress the project
-- [ ] Add more information detail users schema, such as register date and lastest login date
+- [x] Add more information detail users schema, such as register date and lastest login date
 - [ ] Set up comments system
 - [ ] add Logo and shields.io and align them to the center of README.md
