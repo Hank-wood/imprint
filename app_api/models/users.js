@@ -1,7 +1,7 @@
 var mongoose = require( 'mongoose' );
 var crypto = require('crypto');
 var jwt = require('jsonwebtoken');
-
+// Can var be switch to const
 var userSchema = new mongoose.Schema({
   email: {
     type: String,
@@ -14,12 +14,10 @@ var userSchema = new mongoose.Schema({
   },
   createdAt: {
     type: Date, 
-    required: true,
     default: Date.now
   },
   sessionDates: {
-    type: [Date],
-    required: true
+    type: [Date]
   },
   hash: String,
   salt: String

@@ -77,7 +77,7 @@ imprint
 git clone https://github.com/lushen/imprint.git
 cd imprint
 npm install
-set JWT_SECRET=thisIsSecret
+set JWT_SECRET=anyThingYouWant
 npm start
 ```
 >Before running Imprint, you should make sure you have installed ```node.js```, ```npm```, ```git``` and ```mongodb``` already. If there is no hidden file, ```.env```, in Imprint project, you should add a ```.env``` file at the root folder and write ```JWT_SECRET=anyThingYouWant``` in it(you can replace ```anyThingYouWant``` in any words).
@@ -90,16 +90,16 @@ The MIT License (MIT)
 
 ## What Next?
 - [ ] Add users profile page when they sign in or sign up 
-- [ ] Add third-party authentication, such as Facebook and Tiwtter
+- [ ] Add third-party authentication, such as Github and WeChat
 - [ ] Set users api authentication and extend current api
-- [ ] Switch Angular@1.x.x to Angular@2.x.x (or React, maybe...)
+- [ ] Switch Angular@1.x.x to Angular@2.x.x
 - [ ] Push real-time data to the client side
 - [ ] Switch mongodb to rethinkdb (depend on needs...)
 - [ ] Add CSS and JS text animation effect and loading page
 - [ ] Add verification email function when registered successfully
 - [ ] Allow users to change the password
 - [ ] Add more credentials notifications into register and login page
-- [ ] Add gulp file to compress the project
+- [ ] Add gulp file to compress the project and promise to avoid callback hell
 - [x] Add more information detail users schema, such as register date and lastest login date
 - [ ] Set up comments system
-- [ ] add Logo and shields.io and align them to the center of README.md
+- [ ] Add logo and shields.io and align them to the center of README.md
