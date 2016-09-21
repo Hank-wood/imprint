@@ -6,6 +6,7 @@ var sendJSONresponse = function(res, status, content) {
   res.status(status);
   res.json(content);
 };
+
 // http://eddywashere.com/blog/switching-out-callbacks-with-promises-in-mongoose/
 // http://mongoosejs.com/docs/api.html
 module.exports.register = function(req, res) {
@@ -42,7 +43,7 @@ module.exports.login = function(req, res) {
     return;
   }
 
-  passport.authenticate('local', function(err, user, info){
+  passport.authenticate("local", function(err, user, info){
     if(err) {
       sendJSONresponse(res, 404, err);
       return;
@@ -64,6 +65,7 @@ module.exports.login = function(req, res) {
       sendJSONresponse(res, 401, info);
     }
   })(req, res);
+
 };
 
 //http://mherman.org/blog/2013/11/10/social-authentication-with-passport-dot-js/#.V9-QP8IrJD8
@@ -81,22 +83,29 @@ module.exports.login = function(req, res) {
 //http://www.haomou.net/2014/08/13/2014_bare_token/
 //http://haomou.net/2014/08/13/2014_web_token/
 
-// module.exports.github = function(req, res) {
+module.exports.github = passport.authenticate("github", function(err, user, info){
+  if(err) {
+    sendJSONresponse(res, 404, err);
+    return;
+  }
 
-//   passport.authenticate('github', function(err, user, info){
-//     if (err) {
-//       sendJSONresponse(res, 404, err);
-//       return;
-//     }
+  if(user){
+    user.newSessionDate();
+    var promise = user.save();
+    promise.then(function(user){
+      var token = user.generateJwt();
+      sendJSONresponse(res, 200, {
+        "token" : token
+      });
+    })
+    .catch(function(err){
+      sendJSONresponse(res, 404, err);
+    });
+  } else {
+    sendJSONresponse(res, 401, info);
+  }
+});
 
-//     if(user){
-//       var token = user.generateJwt();
-//       sendJSONresponse(res, 200, {
-//         "token" : token
-//       });
-//     } else {
-//       sendJSONresponse(res, 401, info);
-//     }
-//   })(req, res);
-
-// };
+//most important
+//http://jeroenpelgrims.com/token-based-sessionless-auth-using-express-and-passport
+//https://bitbucket.org/resurge/sessionless-token-auth-with-express/src/6e94c2ea59591e75b074ff6acc89442065d33007/app.js?at=master&fileviewer=file-view-default

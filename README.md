@@ -99,7 +99,6 @@ The MIT License (MIT)
 - [ ] Add verification email function when registered successfully
 - [ ] Allow users to change the password
 - [ ] Add more credentials notifications into register and login page
-- [ ] Add gulp file to compress the project and promise to avoid callback hell
+- [ ] Add gulp file to compress the project and promise (or async / await + )to avoid callback hell
 - [x] Add more information detail users schema, such as register date and lastest login date
-- [ ] Set up comments system
 - [ ] Add logo and shields.io and align them to the center of README.md
