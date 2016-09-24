@@ -77,7 +77,7 @@ imprint
 git clone https://github.com/lushen/imprint.git
 cd imprint
 npm install
-set JWT_SECRET=thisIsSecret
+set JWT_SECRET=anyThingYouWant
 npm start
 ```
 >Before running Imprint, you should make sure you have installed ```node.js```, ```npm```, ```git``` and ```mongodb``` already. If there is no hidden file, ```.env```, in Imprint project, you should add a ```.env``` file at the root folder and write ```JWT_SECRET=anyThingYouWant``` in it(you can replace ```anyThingYouWant``` in any words).
